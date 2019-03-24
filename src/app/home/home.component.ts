@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  title = "titulo del componente"
+  admin = false;
   constructor() { }
 
   ngOnInit() {
   }
+
+showInfo(){
+  this.admin=!this.admin;
+}
 
 }
